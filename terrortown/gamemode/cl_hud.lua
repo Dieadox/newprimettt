@@ -108,6 +108,23 @@ surface.CreateFont( "npttt_ammo", {
 	outline = false
 } )
 
+surface.CreateFont( "npttt_coins", {
+	font = "Coolvetica",
+	size = 40,
+	weight = 500,
+	blursize = 0,
+	scanlines = 0,
+	antialias = true,
+	underline = false,
+	italic = false,
+	strikeout = false,
+	symbol = false,
+	rotary = false,
+	shadow = true,
+	additive = false,
+	outline = false
+} )
+
 surface.CreateFont( "npttt_name", {
 	font = "Coolvetica",
 	size = 25,
@@ -386,94 +403,71 @@ local function InfoPaint(client)
 	local health = math.max(0, client:Health())
 	local health_y = y + margin
 	
-		draw.RoundedBox(10, 10,ScrH() - 210,225,190,Color(35,35,35,240))		
-		draw.RoundedBox(0, 10,ScrH() - 200,225,25,Color(150,150,150,255))
-		draw.RoundedBox(0, 50, ScrH() - 132,175,25,Color(0, 0, 0, 255))
-		draw.RoundedBox(0, 52, ScrH() - 130,171,21,Color(50, 50, 50, 255))
-		draw.RoundedBox(0, 52, ScrH() - 130,171,10,Color(255, 255, 255, 5))
-		draw.DrawText("No Ammo","npttt_ammo",135,ScrH() -130,Color(255,255,255,255),TEXT_ALIGN_CENTER)
-		draw.DrawText("New Prime Gaming","npttt_water",5,0,Color(255,255,255,25),TEXT_ALIGN_LEFT)		
+		draw.RoundedBox(10, 5,ScrH() - 200,230,195,Color(10,10,10,200))
+		draw.RoundedBox(0, 70, ScrH() - 113,150,25,Color(0, 0, 0, 255))
+		draw.RoundedBox(0, 72, ScrH() - 111,146,21,Color(50, 50, 50, 255))
+		draw.RoundedBox(0, 72, ScrH() - 111,146,10,Color(255, 255, 255, 5))
+		draw.DrawText("No Ammo","npttt_ammo",145,ScrH() -111,Color(255,255,255,255),TEXT_ALIGN_CENTER)
+		draw.DrawText("New Prime Gaming","npttt_water",centerx,5,Color(255,255,255,25),TEXT_ALIGN_CENTER)		
 		
 		surface.SetDrawColor(255, 255, 255, 255)
 		surface.SetMaterial(sgh_health)
-		surface.DrawTexturedRect( 15.5, ScrH() - 169, 30, 30 )
+		surface.DrawTexturedRect( 10, ScrH() - 169, 50, 50 )
 		
 		surface.SetDrawColor(255, 255, 255, 255)
-		surface.SetMaterial(sgh_karma)
-		surface.DrawTexturedRect( 18, ScrH() - 97.5, 25, 25 )
-		
-		surface.SetDrawColor(255, 255, 255, 255)
-		surface.SetMaterial(sgh_coins2)
-		surface.DrawTexturedRect( 15.5, ScrH() - 60, 30, 30 )
+		surface.SetMaterial(sgh_coins)
+		surface.DrawTexturedRect( 12, ScrH() - 60, 50, 50 )
 		
 		surface.SetDrawColor(255, 255, 255, 255)
 		surface.SetMaterial(sgh_ammo)
-		surface.DrawTexturedRect( 20, ScrH() - 134, 20, 30 )
+		surface.DrawTexturedRect( 16, ScrH() - 125, 40, 50 )
 	
 	if ( LocalPlayer():GetRole() == ROLE_INNOCENT ) then
-		draw.RoundedBox(0, 10,ScrH() - 200,225,25,Color(10,160,10,255))
-		draw.DrawText("Innocent","npttt_tstate",15,ScrH() - 203,Color(255, 255, 255,255),TEXT_ALIGN_LEFT)
+		draw.RoundedBox(0, 5,ScrH() - 190,230,25,Color(10,160,10,255))
+		draw.DrawText("Innocent","npttt_tstate",10,ScrH() - 193,Color(255, 255, 255,0),TEXT_ALIGN_LEFT)
 	elseif ( LocalPlayer():GetRole() == ROLE_TRAITOR ) then
-		draw.RoundedBox(0, 10,ScrH() - 200,225,25,Color(160,10,10,255))
-		draw.DrawText("Traitor","npttt_tstate",15,ScrH() - 203,Color(255, 255,255,255),TEXT_ALIGN_LEFT)
+		draw.RoundedBox(0, 5,ScrH() - 190,230,25,Color(160,10,10,255))
+		draw.DrawText("Traitor","npttt_tstate",10,ScrH() - 193,Color(255, 255,255,255),TEXT_ALIGN_LEFT)
 		draw.DrawText(L.hastemode,"TabLarge", 15,ScrH() - 203,Color(255,255,255,0),TEXT_ALIGN_CENTER)
 	elseif ( LocalPlayer():GetRole() == ROLE_DETECTIVE ) then
-		draw.RoundedBox(0, 10,ScrH() - 200,225,25,Color(0,85,160,255))
-		draw.DrawText("Detective","npttt_tstate",15,ScrH() - 203,Color(255, 255, 255,255),TEXT_ALIGN_LEFT)
+		draw.RoundedBox(0, 5,ScrH() - 190,230,25,Color(0,85,160,255))
+		draw.DrawText("Detective","npttt_tstate",10,ScrH() - 193,Color(255, 255, 255,255),TEXT_ALIGN_LEFT)
 	end
-	
+
 	if round_state == ROUND_PREP then
-	draw.RoundedBox(0, 10,ScrH() - 200,225,25,Color(150,150,150,255))
-	draw.DrawText("Preparing","npttt_tstate",122,ScrH() -245,Color(255,255,255,255),TEXT_ALIGN_CENTER)
+	draw.RoundedBox(0, 5,ScrH() - 190,230,25,Color(50,50,50,255))
+	draw.DrawText("Preparing","npttt_tstate",10,ScrH() -193,Color(255,255,255,255),TEXT_ALIGN_LEFT)
 	
 	elseif round_state == ROUND_POST then
-	draw.RoundedBox(0, 10,ScrH() - 200,225,25,Color(150,150,150,255))
-	draw.DrawText("Round Over","npttt_tstate",122,ScrH() -245,Color(255,255,255,255),TEXT_ALIGN_CENTER)
+	draw.RoundedBox(0, 5,ScrH() - 190,230,25,Color(50,50,50,255))
+	draw.DrawText("Round Over","npttt_tstate",10,ScrH() -193,Color(255,255,255,255),TEXT_ALIGN_LEFT)
 	
 	elseif round_state == ROUND_WAIT then
-	draw.RoundedBox(0, 10,ScrH() - 200,225,25,Color(150,150,150,255))
-	draw.DrawText("Waiting","npttt_tstate",122,ScrH() -245,Color(255,255,255,255),TEXT_ALIGN_CENTER)
+	draw.RoundedBox(0, 5,ScrH() - 190,230,25,Color(50,50,50,255))
+	draw.DrawText("Waiting","npttt_tstate",10,ScrH() -193,Color(255,255,255,255),TEXT_ALIGN_LEFT)
 	end
-	
-// Karma
-local carma = math.Round(ply:GetBaseKarma())
-if KARMA.IsEnabled() then
-	draw.RoundedBox(0, 50,ScrH() - 100,175,25,Color(0,0,0,255))
-	surface.SetDrawColor(255, 255, 255, 100)
-	surface.SetMaterial(sgh_karma_gradient)
-	surface.DrawTexturedRect( 52, ScrH() -98, 175, 21 )
-	draw.DrawText("b","npttt_ban",65,ScrH() -99,Color(255,255,255,255),TEXT_ALIGN_CENTER)
-	draw.DrawText("a","npttt_ban",64.6,ScrH() -93,Color(255,255,255,255),TEXT_ALIGN_CENTER)
-	draw.DrawText("n","npttt_ban",65,ScrH() -86,Color(255,255,255,255),TEXT_ALIGN_CENTER)
-	draw.RoundedBox(0, 52,ScrH() - 98,math.Clamp(carma,450,1000)*0.17,21,Color(51,102,0,255))
-	draw.RoundedBox(0, 52,ScrH() - 96,math.Clamp(carma,450,1000)*0.17,10,Color(255,255,255,7))
-	draw.DrawText(""..carma,"npttt_ammo",135,ScrH() -97,Color(255,255,255,255),TEXT_ALIGN_CENTER)
-end
 
 // Points
-    draw.DrawText(""..ply:PS_GetPoints(),"npttt_ammo",50,ScrH() - 55,Color(255,255,255,255),TEXT_ALIGN_LEFT)
+    draw.DrawText(""..ply:PS_GetPoints(),"npttt_coins",70,ScrH() - 60,Color(255,255,255,255),TEXT_ALIGN_LEFT)
 	
 --  HP
-	draw.RoundedBox(0, 50,ScrH() - 165,175,25,Color(0,0,0,255))
-	draw.RoundedBox(0, 52,ScrH() - 163,math.Clamp(HP,0,100)*1.71,21,Color(160,20,20,255))
-	draw.RoundedBox(0, 52,ScrH() - 163,math.Clamp(HP,0,100)*1.71,10,Color(200,200,200,5))
-	draw.DrawText(""..HP.."","npttt_ammo", 135,ScrH() - 164,Color(255,255,255,200),TEXT_ALIGN_CENTER)
+	draw.RoundedBox(0, 70,ScrH() - 155,150,25,Color(0,0,0,255))
+	draw.RoundedBox(0, 72,ScrH() - 153,math.Clamp(HP,0,100)*1.46,21,Color(160,20,20,255))
+	draw.RoundedBox(0, 72,ScrH() - 153,math.Clamp(HP,0,100)*1.46,10,Color(200,200,200,5))
+	draw.DrawText(""..HP.."","npttt_ammo", 145,ScrH() - 154,Color(255,255,255,255),TEXT_ALIGN_CENTER)
 	
 --  Haste
-	draw.DrawText(text,"npttt_time",230,ScrH() - 200,Color(255,255,255,225),TEXT_ALIGN_RIGHT)
+	draw.DrawText(text,"npttt_time",230,ScrH() - 190,Color(255,255,255,255),TEXT_ALIGN_RIGHT)
 	
 --  Draw ammo
     if client:GetActiveWeapon().Primary then
 		local ammo_clip, ammo_max, ammo_inv = GetAmmo(client)
 		if ammo_clip != -1 then
 		local ammo_y = health_y + bar_height + margin
-			draw.RoundedBox(0, 50, ScrH() - 132,175,25,Color(0, 0, 0, 255))
-			surface.SetDrawColor(255, 255, 255, 75)
-			surface.SetMaterial(sgh_karma_gradient)
-			surface.DrawTexturedRect( 52, ScrH() -129.5, 175, 21 )
-			PaintBar( 52, ScrH() - 129.5, bar_width + 51, bar_height - 4, ammo_colors, ammo_clip/ammo_max)
-			PaintBar( 52, ScrH() - 129.5, bar_width + 51, bar_height - 15, ammo_colorsb, ammo_clip/ammo_max)
-			draw.DrawText(""..ammo_clip.."/"..ammo_inv.."","npttt_ammo", 135, ScrH() - 131,Color(255,255,255,255),TEXT_ALIGN_CENTER)
+			draw.RoundedBox(0, 70, ScrH() - 113,150,25,Color(0, 0, 0, 255))
+			PaintBar( 72, ScrH() - 111, bar_width + 26, bar_height - 4, ammo_colors, ammo_clip/ammo_max)
+			PaintBar( 72, ScrH() - 111, bar_width + 26, bar_height - 15, ammo_colorsb, ammo_clip/ammo_max)
+			draw.DrawText(""..ammo_clip.."/"..ammo_inv.."","npttt_ammo", 145, ScrH() - 112,Color(255,255,255,255),TEXT_ALIGN_CENTER)
          local text = string.format("%i + %02i", ammo_clip, ammo_inv)
 		end
     end
