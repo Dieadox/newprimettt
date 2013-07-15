@@ -37,11 +37,6 @@ SWEP.AutoSpawnable      = true
 SWEP.AmmoEnt = "item_ammo_smg1_ttt"
 SWEP.HeadshotMultiplier = 1.25
 
-SWEP.Pistol = false
-SWEP.Shotgun = false
-SWEP.Rifle = true
-SWEP.Sniper = false
-
 SWEP.UseHands			= true
 SWEP.ViewModelFlip		= false
 SWEP.ViewModelFOV		= 50

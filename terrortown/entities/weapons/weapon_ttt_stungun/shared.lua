@@ -40,11 +40,6 @@ SWEP.Primary.Recoil		= 0.4
 SWEP.Primary.Sound 		= Sound("NP_P90.Single")
 SWEP.Secondary.Sound = Sound("Default.Zoom")
 
-SWEP.Pistol = false
-SWEP.Shotgun = false
-SWEP.Rifle = true
-SWEP.Sniper = false
-
 SWEP.UseHands			= true
 SWEP.ViewModelFlip		= false
 SWEP.ViewModelFOV		= 54

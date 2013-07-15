@@ -28,11 +28,6 @@ SWEP.Primary.DefaultClip = 6
 SWEP.Primary.ClipMax = 18
 SWEP.Primary.Ammo = "AlyxGun"
 
-SWEP.Pistol = false
-SWEP.Shotgun = true
-SWEP.Rifle = false
-SWEP.Sniper = false
-
 SWEP.Kind = WEAPON_PISTOL
 SWEP.CanBuy = {ROLE_TRAITOR} -- only traitors can buy
 SWEP.WeaponID = AMMO_SIPISTOL

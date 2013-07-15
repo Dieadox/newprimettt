@@ -31,11 +31,6 @@ SWEP.Primary.ClipSize = 10
 SWEP.Primary.ClipMax = 20
 SWEP.Primary.DefaultClip = 10
 
-SWEP.Pistol = false
-SWEP.Shotgun = false
-SWEP.Rifle = false
-SWEP.Sniper = true
-
 SWEP.HeadshotMultiplier = 4
 
 SWEP.AutoSpawnable      = true

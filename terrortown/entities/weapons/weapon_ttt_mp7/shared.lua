@@ -28,11 +28,6 @@ SWEP.Primary.ClipMax = 90
 SWEP.Primary.Ammo = "smg1"
 SWEP.HeadshotMultiplier = 1.25
 
-SWEP.Pistol = false
-SWEP.Shotgun = false
-SWEP.Rifle = true
-SWEP.Sniper = false
-
 SWEP.Kind = WEAPON_HEAVY
 SWEP.CanBuy = {ROLE_TRAITOR} -- only traitors can buy
 SWEP.WeaponID = AMMO_SIPISTOL

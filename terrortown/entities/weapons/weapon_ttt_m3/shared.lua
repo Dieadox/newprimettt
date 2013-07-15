@@ -33,11 +33,6 @@ SWEP.AutoSpawnable      = true
 SWEP.AmmoEnt = "item_box_buckshot_ttt"
 SWEP.HeadshotMultiplier = 1.25
 
-SWEP.Pistol = false
-SWEP.Shotgun = true
-SWEP.Rifle = false
-SWEP.Sniper = false
-
 SWEP.UseHands			= true
 SWEP.ViewModelFlip		= false
 SWEP.ViewModelFOV		= 54

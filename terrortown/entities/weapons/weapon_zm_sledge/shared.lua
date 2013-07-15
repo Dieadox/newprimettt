@@ -40,12 +40,6 @@ SWEP.Primary.Recoil		= 0.55
 SWEP.Primary.Sound			= Sound("NP_M249.Single")
 SWEP.AmmoEnt = "item_ammo_smg1_ttt"
 
-SWEP.Pistol = false
-SWEP.Shotgun = false
-SWEP.Rifle = false
-SWEP.Sniper = false
-SWEP.M249 = true
-
 SWEP.UseHands			= true
 SWEP.ViewModelFlip		= false
 SWEP.ViewModelFOV		= 55

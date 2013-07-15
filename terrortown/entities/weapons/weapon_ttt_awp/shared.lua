@@ -34,10 +34,6 @@ SWEP.AutoSpawnable      = true
 SWEP.HeadshotMultiplier = 4
 SWEP.DeploySpeed = 0.8
 
-SWEP.Pistol = false
-SWEP.Shotgun = false
-SWEP.Rifle = false
-SWEP.Sniper = true
 
 ----------------
 ---Model Info---
