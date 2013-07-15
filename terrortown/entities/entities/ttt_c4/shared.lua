@@ -22,7 +22,7 @@ if CLIENT then
    };
 end
 
-C4_WIRE_COUNT   = 6
+C4_WIRE_COUNT   = 5
 C4_MINIMUM_TIME = 45
 C4_MAXIMUM_TIME = 600
 
@@ -79,7 +79,7 @@ function ENT:Initialize()
    if not self:GetThrower() then self:SetThrower(nil) end
 
    if not self:GetRadius() then self:SetRadius(1000) end
-   if not self:GetDmg() then self:SetDmg(200) end
+   if not self:GetDmg() then self:SetDmg(300) end
 
 end
 

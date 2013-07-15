@@ -13,8 +13,8 @@ AccessorFunc( ENT, "radius", "Radius", FORCE_NUMBER )
 AccessorFunc( ENT, "dmg", "Dmg", FORCE_NUMBER )
 
 function ENT:Initialize()
-   if not self:GetRadius() then self:SetRadius(800) end
-   if not self:GetDmg() then self:SetDmg(200) end
+   if not self:GetRadius() then self:SetRadius(500) end
+   if not self:GetDmg() then self:SetDmg(150) end
 
    return self.BaseClass.Initialize(self)
 end
@@ -39,8 +39,8 @@ function ENT:Explode(tr)
       local effect = EffectData()
       effect:SetStart(pos)
       effect:SetOrigin(pos)
-      effect:SetScale(self:GetRadius() * 0.3)
-      effect:SetRadius(800)
+      effect:SetScale(self:GetRadius() * 0.1)
+      effect:SetRadius(500)
       effect:SetMagnitude(200)
 
       if tr.Fraction != 1.0 then
