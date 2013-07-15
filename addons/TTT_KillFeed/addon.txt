@@ -1,0 +1,7 @@
+"AddonInfo"
+{
+	"name"        "TTT Kill Feed"
+	"version"     "1.0.0"
+	"author_name" "Demonkush"
+	"info"        "Prints who killed you and what their role is in chat."
+}

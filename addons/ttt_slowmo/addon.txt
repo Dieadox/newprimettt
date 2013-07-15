@@ -1,0 +1,9 @@
+"AddonInfo"
+{
+	"name"        "TTT Slowmo"
+	"version"     ""
+	"author_name" "TheTrueLor"
+	"author_url"  ""
+	"info"        "Visual effect on final kill of a round."
+	"override"    "0"
+}

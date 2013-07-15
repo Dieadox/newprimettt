@@ -1,0 +1,13 @@
+"AddonInfo"
+ {
+ 	"name"		"TTT Turtle Nade"
+ 	"version"	""
+ 	"up_date"	""
+
+ 	"author_name"	"TheTrueLor"
+ 	"author_email"	""
+ 	"author_url"	""
+
+ 	"info"		"Turtle Grenade for Traitors"
+ 	"override"	"0"
+ }

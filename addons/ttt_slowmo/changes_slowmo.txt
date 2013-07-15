@@ -1,0 +1,17 @@
+Changelog: 
+1/6/2013: 
+[Added] CVar ttt_slowmo_time (def. 0.5) controls the time of the slow-motion effect; 
+
+12/29/2012: 
+[Added] Server CVar ttt_slowmo_draw (def. 1): Controls clientside screen effects. 
+[Removed] Cvar ttt_draw_slowmo; The server now controls whether screen effects are done clientside; 
+
+12/22/2012: 
+[Added] Convar: ttt_slowmo_sound (def. ""): specify a sound (relative to the sounds directory) to be played; 
+
+11/13/2012: 
+[Added] Now features a visual effect during slowmo: Designed by SaHeMeRa; 
+
+11/10/2012: 
+Initial release; 
+[Fixed] Killing outside the round no longer initiates slowmo;

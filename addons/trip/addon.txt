@@ -1,0 +1,7 @@
+// Extracted with MulleDK19's GMAD Extractor
+"AddonInfo"
+{
+	"name" "TTT Tripmine"
+	"author_name" "Unknown"
+	"info" "Only useable for the gamemode TTT. Traitor weapon.  A mine, with a red laster, placeable on walls. When the red laser is crossed by innocents or detectives, the mine explodes.  This is a modified, now working, version of a non working swep to which I can't find the original author. Thanks to AmbientFreak and  Bad King Urgrain (with his sexy eagle eyes), from the TTT forums, for making this possible."
+}

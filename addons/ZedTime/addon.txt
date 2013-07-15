@@ -1,0 +1,10 @@
+"AddonInfo"
+{
+	"name"			"ZedTime"
+	"version"		"1.2"
+	"up_date"		"11/9/2012"
+	"author_name"	"Tommynator"
+	"author_url"	"http://tommynator.org"
+	"author_email"	"hectorenowel@gmail.com"
+	"info"			"Killing-Floor like slowmotion effect for traitors or detective on TTT."
+}

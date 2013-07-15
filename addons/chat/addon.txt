@@ -1,0 +1,7 @@
+// Extracted with MulleDK19's GMAD Extractor
+"AddonInfo"
+{
+	"name" "Chat Tags v2.0 Console Fix"
+	"author_name" "Unknown"
+	"info" "A simple, easy to use addon that adds your rank before your name.  Features - Easy to use, configurable - Set your chat colors (if usergroup is true) - Add more chat tags easily"
+}

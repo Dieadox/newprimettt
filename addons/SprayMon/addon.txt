@@ -1,0 +1,7 @@
+// Extracted with MulleDK19's GMAD Extractor
+"AddonInfo"
+{
+	"name" "SprayMon"
+	"author_name" "Unknown"
+	"info" "SprayMon allows players to see authors of sprays. If there is more than one spray in one point, SprayMon will display all of their creators.  Allows admins to draw sprays without delay. You can control who can use this feature by changing spraymon_nodelay convar: 0 - nobody | 1 - admins | 2 - superadmins. By default it's 1.  Hold ALT for SprayMon to show SteamIDs.  (This addon is for servers, it's useless on clients.)"
+}

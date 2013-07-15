@@ -1,0 +1,41 @@
+Changelog
+2013-05-04
+[Balance] Switched to fast headcrabs;
+[Balance] Reduced damage 15 -> 10;
+[Fixed] Removed an annoying debug message; 
+
+2013-02-16:
+[Fixed] Minor optimization, and resolved a rare bug;
+
+2013-01-05: 
+[Added] Clients will fall back to the default icons if new icons aren't installed correctly (See description); 
+
+2013-01-04:
+[Added] Icon, created by wD. Fried Chicken;
+
+2013-01-02:
+[Fixed] Clients who connect after the weapon has been purchased will no longer experience lua errors.
+
+2012-12-29:
+[Fixed] Turtle props no longer collide with players;
+[Balance] Damage increased: 10 -> 15;
+
+2012-12-15:
+[Fixed] Worldmodel displays in hand;
+[Fixed] Turtles no longer spawn in walls or players;
+[Added] Proper view model;
+[Balance] Turtle spawn radius increased;
+
+2012-12-14:
+[Fixex] The weapon now occupies the correct item slot;
+
+2012-11-7:
+[Balance] Damage increased: 5 -> 10;
+[Balance] Turtles increased: 4 -> 6;
+
+2012-11-04:
+[Fixed] Headcrab Ragdoll no longer appears;
+[Fixed] Damage dealt is now awarded to thrower;
+
+2012-11-03:
+Initial Release

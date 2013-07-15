@@ -1,0 +1,6 @@
+"AddonInfo"
+{
+	"name" "Crash Catcher"
+	"author_name" "Unknown"
+	"info" "A simple, easy to use addon that helps with crazy physics crashes."
+}

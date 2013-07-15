@@ -1,0 +1,9 @@
+"AddonInfo"
+{
+	"name"			"Spiderman's Swep"
+	"version"		"1.0"
+	"up_date"		"1-3-2009"
+	"author_name"		"Darkfortune"
+	"author_email"		"Darkfortune202@gmail.com"
+	"info"			"Spiderman's Swep"
+}

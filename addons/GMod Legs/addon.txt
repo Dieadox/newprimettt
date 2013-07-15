@@ -1,0 +1,7 @@
+// Extracted with MulleDK19's GMAD Extractor
+"AddonInfo"
+{
+	"name" "GMod Legs"
+	"author_name" "Unknown"
+	"info" "GMod Legs  Its just like the Battle Field 3 Legs system or the Left 4 Dead leg system but... In Garry's Mod. This is a fix of blackops7799s legs addon but  for GMod 13.  Changelog: 3.4: [FIX] Leg clipping [CHANGE] commands ( view info for info )  3.3: [ADD] New Client/Server convar see info for more info [ADD] New GUI, GModLegs_Menu [CHANGE] Adverts only show im multiplayer, [FIX] Noclip bugs  3.2: [REMOVED] Lua Commands [ADD] Client/Server Convars.  3.1b: [FIX] Lua errors. [FIX] You can see your legs once again.  3.1: [ADD] Support for custom models [ADD] Realism command ( Realism In console. ) [FIX] Clipping Errors [ADD] Death View ( See Death In First Person, And Fade to black ) [ADD] Chat Adverts ( Servers Only )  3.0: Initial Release    Credits: Created by blackops7799 Fixed for GMod 13 by Valkyrie  Info:  Commands:  cl_legs <1/0> Default = "1" <Enables/Disabled The Viewing Of Legs> cl_deathview <1/0> Default = "1" <Enables/Disabled The First Person View Death Effect> cl_deathfade <1/0> Default = "0" <Enables/Disabled The First Person View Death Fade Effect> cl_chat <1/0> Default = "1" <Enables/Disabled The Chat Advertisements> cl_menu <Opens The GLegs Menu.>"
+}

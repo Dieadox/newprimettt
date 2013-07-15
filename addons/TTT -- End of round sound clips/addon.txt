@@ -1,0 +1,7 @@
+// Extracted with MulleDK19's GMAD Extractor
+"AddonInfo"
+{
+	"name" "TTT -- End of round sound clips"
+	"author_name" "Unknown"
+	"info" "This my first workshop addon, therefore I'll keep it simple.  I had this lying around and I thought I'd share it.  What does it do?: It plays sound clips at the end of a round.  Info taken from the .lua script below  ----FEATURE LIST----  No need to manually resource.AddFile  Three tables to add the different sounds to the different type of wins (Traitor win, innocent win, out of time)  No need to add "sound/" in the tables, if you do, you'll actually be screwing up the resource.addfile  Sounds are randomly chosen inside the table matching the proper win method  ----WARNINGS AND TIPS----  Remember that you can only use "/" and not "\"  Remember to keep a table actually not fully empty to avoid code breaking. You can even just leave a wrong path in it  For a guide on how to add new sounds, check the workshop page  ----TUTORIAL ON ADDING SOUNDS----  Below there's a sound table:  local InnocentWinSounds = { "Sound1.wav", "Sound2.wav", "Sound3.wav" }  -You can add as many sounds as you want, remember to keep them between brackets.  -You can follow that pattern to add new sounds, just remember that the sounds must be between quotes, and don't have to begin with "sound/", however they must end with their extension.  -You must put a comma after each sound path, but remember that the last path must NOT have one. "
+}
