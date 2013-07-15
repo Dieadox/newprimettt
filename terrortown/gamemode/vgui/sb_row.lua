@@ -198,6 +198,11 @@ if ply:IsUserGroup("srv_owner") then
   self.cols[5]:SetText("Owner")
   self.cols[5]:SetTextColor(Color(30,144,255))
 end
+
+if ply:IsUserGroup("developer") then
+  self.cols[5]:SetText("Developer")
+  self.cols[5]:SetTextColor(Color(30,144,255))
+end
     
 if ply:IsUserGroup("superadmin") then
   self.cols[5]:SetText("S.Admin")
