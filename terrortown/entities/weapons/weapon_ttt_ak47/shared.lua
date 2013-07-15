@@ -29,7 +29,6 @@ SWEP.Primary.DefaultClip = 30
 SWEP.AutoSpawnable      = true
 SWEP.HeadshotMultiplier = 1.25
 SWEP.AmmoEnt = "item_ammo_smg1_ttt"
-SWEP.HeadshotMultiplier = 1.25
 
 
 ----------------
