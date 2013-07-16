@@ -424,7 +424,7 @@ local function InfoPaint(client)
 	
 	if ( LocalPlayer():GetRole() == ROLE_INNOCENT ) then
 		draw.RoundedBox(0, 5,ScrH() - 190,230,25,Color(10,160,10,255))
-		draw.DrawText("Innocent","npttt_tstate",10,ScrH() - 193,Color(255, 255, 255,0),TEXT_ALIGN_LEFT)
+		draw.DrawText("Innocent","npttt_tstate",10,ScrH() - 193,Color(255, 255, 255,255),TEXT_ALIGN_LEFT)
 	elseif ( LocalPlayer():GetRole() == ROLE_TRAITOR ) then
 		draw.RoundedBox(0, 5,ScrH() - 190,230,25,Color(160,10,10,255))
 		draw.DrawText("Traitor","npttt_tstate",10,ScrH() - 193,Color(255, 255,255,255),TEXT_ALIGN_LEFT)
