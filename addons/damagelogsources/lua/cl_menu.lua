@@ -15,6 +15,7 @@ end
       		
 function Damagelog:damagelogMenu()
 	if LocalPlayer():CanUseDamagelog() then 
+		LocalPlayer().chatPrint("Has opened the damage log")
 		self:drawMenu()
 	else
 		chat.AddText(Color(255, 62, 62, 255), "You can't open the menu right now.")
