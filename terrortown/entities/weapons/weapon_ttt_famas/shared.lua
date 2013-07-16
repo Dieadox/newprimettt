@@ -34,6 +34,7 @@ SWEP.Primary.ClipSize = 25
 SWEP.Primary.ClipMax = 75
 SWEP.Primary.DefaultClip = 25
 SWEP.AutoSpawnable      = true
+SWEP.HeadshotMultiplier = 1.25
 SWEP.AmmoEnt = "item_ammo_smg1_ttt"
 
 
@@ -72,7 +73,7 @@ function SWEP:SecondaryAttack()
     if SERVER then
         self:SetZoom(bIronsights)
      else
-        self:EmitSound(self.Secondary.Sound)
+        
     end
     
     self.Weapon:SetNextSecondaryFire( CurTime() + 0.3)
