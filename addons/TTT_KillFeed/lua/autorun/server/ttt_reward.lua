@@ -17,9 +17,9 @@ function NotifyPlayer(ply, killer)
     local num = RolePoints[killer:GetRole()][ply:GetRole()]
     local bool = string.find(num, "-")
     if bool then
-	timer.Simple(5, PrintMessage, "This message will display after 5 seconds!")
+	killer:PrintMessage(HUD_PRINTTALK, "[TTT] Shop: You lost "..num.." coins")
     else
-	timer.Simple(5, PrintMessage, "This message will display after 5 seconds!")
+	killer:PrintMessage(HUD_PRINTTALK, "[TTT] Shop: You earned "..num.." coinss")
     end
     killer:PS_GivePoints(num)
 end
@@ -31,17 +31,3 @@ function PointShopDeathHook(ply, killer, dmginfo)
     end
 end
 hook.Add("DoPlayerDeath", "PointShopDeathHook", PointShopDeathHook)
-
-local function PointLoss( message, ply)
-	local nick = um:ReadString()
-	killer:PrintMessage(HUD_PRINTTALK, "[TTT] Shop: You lost "..num.." points")
-	ServerLog("[TTT REWARD]"..ply:Nick()" lost "..num.." for a kill! \n")
-	killer:PS_GivePoints(num)
-end
-
-local function PointGain( message, ply)
-	local nick = um:ReadString()
-	killer:PrintMessage(HUD_PRINTTALK, "[TTT] Shop: You earned "..num.." points")
-	ServerLog("[TTT REWARD]"..ply:Nick()" gained "..num.." for a kill! \n")
-	killer:PS_GivePoints(num)
-end
