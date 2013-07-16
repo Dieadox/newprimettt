@@ -27,7 +27,8 @@ SWEP.Kind = WEAPON_HEAVY
 SWEP.WeaponID = AMMO_M249
 
 
-SWEP.Primary.Damage		= 15
+SWEP.Primary.Damage		= 20
+SWEP.HeadshotMultiplier = 1.25
 SWEP.Primary.Delay 		= 0.066
 SWEP.Primary.Cone = 0.08
 SWEP.Primary.ClipSize = 75
@@ -36,7 +37,7 @@ SWEP.Primary.DefaultClip	= 75
 SWEP.Primary.Automatic		= true
 SWEP.Primary.Ammo        = "smg1"
 SWEP.AutoSpawnable      = true
-SWEP.Primary.Recoil		= 0.55
+SWEP.Primary.Recoil		= 0.60
 SWEP.Primary.Sound			= Sound("NP_M249.Single")
 SWEP.AmmoEnt = "item_ammo_smg1_ttt"
 
