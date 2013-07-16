@@ -19,7 +19,7 @@ CROSSBOW_GLOW_SPRITE2	= "sprites/blueflare1.vmt"
 
 if CLIENT then
    
-   SWEP.PrintName          = "Silenced Crossbow"           
+   SWEP.PrintName          = "Crossbow"           
    SWEP.Author             = "Urban"
    SWEP.Slot               = 6
    SWEP.SlotPos            = 1
