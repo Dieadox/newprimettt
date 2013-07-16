@@ -75,7 +75,7 @@ self.Weapon:SetNextPrimaryFire(CurTime() + 3)
 		effectdata:SetNormal( self.Owner:GetPos() )
 		effectdata:SetMagnitude( 200 )
 		effectdata:SetScale( 1.5 )
-		effectdata:SetRadius( 750 )
+		effectdata:SetRadius( 1000 )
 	util.Effect( "Sparks", effectdata )
 	self.BaseClass.ShootEffects( self )
 	
